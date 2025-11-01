@@ -19,7 +19,7 @@ const AddTask = () => {
             placeholder="Add a new task..."
             value={text}
             onChange={(e) => setText(e.target.value)}
-            className="bg-gray-100 text-[14px] font-medium w-full px-4 py-2 rounded-sm placeholder:text-black-400 focus:outline-none"
+            className="bg-gray-100 text-[14px] font-medium w-full px-4 py-2 rounded-sm placeholder:text-black-400 placeholder:font-normal focus:outline-none"
           />
           {/* Add Task Button */}
           <button

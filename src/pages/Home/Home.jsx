@@ -5,7 +5,7 @@ import TasksList from "../../components/TasksList";
 
 const Home = () => {
   return (
-    <div className="home bg-linear-to-r from-blue-600/5 to-purple-600/5 flex items-center justify-center">
+    <div className="home bg-linear-to-r from-blue-600/3 to-purple-600/3 flex items-center justify-center">
       <div className="h-screen w-[50%] flex flex-col items-center pt-16 ">
         <h1 className="text-[30px] font-bold text-[#546bff]">My Todo App</h1>
         <p className="mt-2 text-[14px] text-black/60">
@@ -19,7 +19,7 @@ const Home = () => {
         <AddTask />
 
         {/* Search Task */}
-        {/* <SearchTasks /> */}
+        <SearchTasks />
 
         {/* Tasks List */}
         {/* <TasksList /> */}
