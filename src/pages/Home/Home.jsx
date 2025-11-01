@@ -5,8 +5,8 @@ import TasksList from "../../components/TasksList";
 
 const Home = () => {
   return (
-    <div className="home bg-linear-to-r from-blue-600/3 to-purple-600/3 flex items-center justify-center">
-      <div className="h-screen w-[50%] flex flex-col items-center pt-16 ">
+    <div className="home bg-linear-to-r from-blue-600/3 to-purple-600/3 flex items-center justify-center w-full">
+      <div className="w-[90%] md:w-[70%] lg:w-[55%] flex flex-col items-center py-16">
         <h1 className="text-[30px] font-bold text-[#546bff]">My Todo App</h1>
         <p className="mt-2 text-[14px] text-black/60">
           Stay organized and productive
@@ -22,7 +22,7 @@ const Home = () => {
         <SearchTasks />
 
         {/* Tasks List */}
-        {/* <TasksList /> */}
+        <TasksList />
       </div>
     </div>
   );
