@@ -17,9 +17,9 @@ const AddTask = () => {
   };
 
   return (
-    <div className="form mt-8 bg-white px-10 py-6 border border-black/10 rounded-lg w-full">
+    <div className="form mt-8 bg-white px-5 lg:px-10 py-6 border border-black/10 rounded-lg w-full">
       <form onSubmit={submitTask}>
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-col lg:flex-row items-center gap-3">
           {/* Input Field */}
           <input
             type="text"
@@ -31,13 +31,13 @@ const AddTask = () => {
           {/* Add Task Button */}
           <button
             type="submit"
-            className="bg-[#546bff] text-[14px] flex flex-row items-center justify-center gap-1 px-4 py-2 rounded-md text-white hover:cursor-pointer hover:shadow-lg hover:shadow-black/10 transition-all duration-500"
+            className="bg-[#546bff] text-[14px] w-full lg:w-[120px] flex flex-row items-center justify-center gap-1 px-4 py-2 rounded-md text-white hover:cursor-pointer hover:shadow-lg hover:shadow-black/10 transition-all duration-500"
           >
             <FaPlus className="text-[14px]" />
             <p className="text-[14px] text-semibold">Add</p>
           </button>
         </div>
-        <div className="mt-4 flex flex-row gap-5 items-center justify-normal">
+        <div className="mt-4 flex flex-col lg:flex-row gap-5 items-start justify-normal">
           {/* Select Category Option */}
           <div className="selection flex flex-row items-center gap-2">
             <label
