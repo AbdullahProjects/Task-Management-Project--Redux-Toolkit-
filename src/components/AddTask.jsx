@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
+import { useDispatch } from "react-redux";
+import taskSlice, { addTask } from "../features/task/taskSlice"
 
 const AddTask = () => {
   const [text, setText] = useState("");
   const [selectedCategoryOption, setSelectedCategoryOption] =
     useState("personal");
   const [selectedPriorityOption, setSelectedPriorityOption] = useState("high");
+  const dispatch = useDispatch();
 
-  const submitTask = () => {};
+  const submitTask = (e) => {
+    e.preventDefault();
+    dispatch(addTask(text, selectedCategoryOption, selectedPriorityOption));
+    setText("");
+  };
 
   return (
     <div className="form mt-8 bg-white px-10 py-6 border border-black/10 rounded-lg w-full">
