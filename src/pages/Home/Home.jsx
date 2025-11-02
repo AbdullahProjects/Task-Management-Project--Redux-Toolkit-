@@ -11,9 +11,6 @@ const Home = () => {
         <p className="mt-2 text-[14px] text-black/60">
           Stay organized and productive
         </p>
-        <p className="mt-1 text-[14px] text-black/60">
-          1 completed • 3 total tasks
-        </p>
 
         {/* Add Task */}
         <AddTask />
