@@ -21,7 +21,7 @@ const SearchTasks = () => {
   return (
     <div className="search-task mt-4 w-full flex flex-row items-center gap-4">
       {/* Input Field for Search Tasks*/}
-      <div className="search-input-field w-full bg-white flex flex-row items-center gap-2 rounded-md py-3 px-4">
+      {/* <div className="search-input-field w-full bg-white flex flex-row items-center gap-2 rounded-md py-3 px-4">
         <IoSearchOutline />
         <input
           type="text"
@@ -29,7 +29,8 @@ const SearchTasks = () => {
           onChange={(v) => dispatch(searchTasks(v.target.value))}
           className="w-full text-[14px] font-medium focus:outline-none placeholder:text-black-400 placeholder:font-normal bg-transparent"
         />
-      </div>
+      </div> */}
+      <h1 className="w-full text-[16px] font-medium">Filter Tasks</h1>
       {/* Filter Tasks */}
       <div className="filter-tasks flex flex-row items-center gap-2">
         <CiFilter className="text-[20px] text-black/60" />
